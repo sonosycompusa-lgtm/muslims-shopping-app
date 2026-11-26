@@ -38,7 +38,7 @@ jobs:
       - name: scaffold
         run: |
           npm init -y
-          npm i @capacitor/core @capacitor/cli @capacitor/ios @capacitor/push-notifications @capacitor/share
+          npm i @capacitor/core @capacitor/cli @capacitor/ios
           mkdir www
           echo '<!doctype html><meta http-equiv="refresh" content="0;url=https://muslimsshopping.com">' > www/index.html
           echo '{"appId":"com.muslimsshopping.app","appName":"Muslims Shopping","webDir":"www","server":{"url":"https://muslimsshopping.com","allowNavigation":["muslimsshopping.com","*.muslimsshopping.com"]}}' > capacitor.config.json
